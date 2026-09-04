@@ -58,17 +58,18 @@
             letter-spacing: 2px;
         }
 
-        /* Dark Frosted Glass for contrast against the light pastels */
+        /* Soft White/Pink Card, keeping the 2016 pastel palette but with real contrast */
         .glass-card {
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 182, 185, 0.6);
+            box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.08);
         }
         .glass-card:hover {
-            border-color: #ffffff;
-            background: rgba(0, 0, 0, 0.35);
+            border-color: #ffb6b9;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.12);
         }
     </style>
 </head>
@@ -92,10 +93,12 @@
         
         <!-- Floating 2016 Elements -->
         <div class="absolute top-10 left-10 text-6xl opacity-90 animate-float-slow select-none">🌴</div>
-        <div class="absolute top-32 right-10 md:right-32 text-6xl opacity-90 animate-float-fast select-none">🐶</div>
+        <div class="absolute top-32 right-10 md:right-32 text-6xl opacity-90 animate-float-fast select-none">📷</div>
         <div class="absolute bottom-10 left-20 md:left-40 text-5xl opacity-90 animate-float-slow select-none">🌸</div>
         <div class="absolute top-10 right-1/4 text-5xl opacity-80 animate-float-fast select-none">👻</div>
         <div class="absolute bottom-20 right-20 text-6xl opacity-90 animate-float-slow select-none" style="animation-delay: 1s;">📱</div>
+        <div class="absolute top-1/2 left-6 md:left-16 text-5xl opacity-90 animate-float-slow select-none" style="animation-delay: 2s;">☀️</div>
+        <div class="absolute bottom-1/3 right-6 md:right-16 text-6xl opacity-90 animate-float-fast select-none" style="animation-delay: 0.5s;">👩‍💻</div>
 
         <div class="inline-block px-5 py-2 mb-6 rounded-full border-2 border-white text-white font-bold tracking-wide uppercase bg-black/20 backdrop-blur-sm shadow-lg">
             October 17-18, 2026 • Georgia Tech
@@ -122,7 +125,7 @@
             <div class="flex items-center justify-between p-5 border-b border-gray-200 bg-gray-50">
                 <div class="flex items-center gap-4">
                     <div class="w-14 h-14 rounded-full bg-gray-300 overflow-hidden border border-gray-300">
-                        <img src="https://via.placeholder.com/150" alt="Profile" class="w-full h-full object-cover grayscale opacity-80">
+                        <img src="assets/wagdt-logo.png" alt="WACC GT Logo" class="w-full h-full object-cover">
                     </div>
                     <div class="leading-tight">
                         <!-- Classic 2016 IG Blue Username -->
@@ -134,9 +137,7 @@
             </div>
 
             <!-- Post Image (1:1 Square) -->
-            <div class="w-full aspect-square bg-gradient-to-br from-pastelPink via-pastelPeach to-pastelBlue flex flex-col items-center justify-center p-8 text-center relative shadow-inner">
-                <h3 class="text-7xl font-black text-white drop-shadow-md handwriting-font mb-4 tracking-widest transform -rotate-3">REMEMBER<br>2016?</h3>
-            </div>
+            <img src="assets/ig-post.jpeg" alt="Hack Like W@CC 2026 poster" class="w-full aspect-square object-cover">
 
             <!-- Action Bar (Icons) -->
             <div class="flex items-center justify-between p-5 pb-3">
@@ -212,7 +213,7 @@
             <div class="flex flex-col">
                 <!-- Event 1 (Red Solid - Photo) -->
                 <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
-                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm flex items-center justify-center text-sm">🥐</div>
                     <div class="flex-grow">
                         <p class="font-bold text-lg text-gray-900 leading-tight">Check-in & Breakfast</p>
                         <p class="text-gray-400 text-sm mt-1">Saturday • 9:00 AM</p>
@@ -221,7 +222,7 @@
 
                 <!-- Event 2 (Purple Solid - Video) -->
                 <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
-                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm flex items-center justify-center text-sm">🎤</div>
                     <div class="flex-grow">
                         <p class="font-bold text-lg text-gray-900 leading-tight">Opening Ceremony & ADP Keynote</p>
                         <p class="text-gray-400 text-sm mt-1">Saturday • 10:00 AM</p>
@@ -230,7 +231,7 @@
 
                 <!-- Event 3 (Purple Solid - Video) -->
                 <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
-                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="w-7 h-7 bg-[#99539f] rounded-[5px] flex-shrink-0 shadow-sm flex items-center justify-center text-sm">🤖</div>
                     <div class="flex-grow">
                         <p class="font-bold text-lg text-gray-900 leading-tight">ADP AI Workshop</p>
                         <p class="text-gray-400 text-sm mt-1">Saturday • 10:30 AM</p>
@@ -239,7 +240,7 @@
 
                 <!-- Event 4 (Red Solid - Photo) -->
                 <div class="flex items-center gap-5 p-5 border-b border-gray-100 hover:bg-gray-50 transition cursor-default">
-                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm"></div>
+                    <div class="w-7 h-7 bg-[#ed2553] rounded-[5px] flex-shrink-0 shadow-sm flex items-center justify-center text-sm">💻</div>
                     <div class="flex-grow">
                         <p class="font-bold text-lg text-gray-900 leading-tight">Hacking Begins!</p>
                         <p class="text-gray-400 text-sm mt-1">Saturday • 11:30 AM</p>
@@ -253,7 +254,7 @@
 
                 <!-- Event 5 (Red Hollow - Viewed Photo) -->
                 <div class="flex items-center gap-5 p-5 border-b border-gray-100 bg-gray-50/50 cursor-default">
-                    <div class="w-7 h-7 border-[3px] border-[#ed2553] bg-transparent rounded-[5px] flex-shrink-0"></div>
+                    <div class="w-7 h-7 border-[3px] border-[#ed2553] bg-transparent rounded-[5px] flex-shrink-0 flex items-center justify-center text-sm">🍕</div>
                     <div class="flex-grow">
                         <p class="font-normal text-lg text-gray-700 leading-tight">Lunch Served</p>
                         <p class="text-gray-400 text-sm mt-1">Opened • Saturday 1:00 PM</p>
@@ -262,7 +263,7 @@
 
                 <!-- Event 6 (Purple Hollow - Viewed Video) -->
                 <div class="flex items-center gap-5 p-5 bg-gray-50/50 cursor-default">
-                    <div class="w-7 h-7 border-[3px] border-[#99539f] bg-transparent rounded-[5px] flex-shrink-0"></div>
+                    <div class="w-7 h-7 border-[3px] border-[#99539f] bg-transparent rounded-[5px] flex-shrink-0 flex items-center justify-center text-sm">🏁</div>
                     <div class="flex-grow">
                         <p class="font-normal text-lg text-gray-700 leading-tight">Project Submissions Due</p>
                         <p class="text-gray-400 text-sm mt-1">Opened • Sunday 12:00 PM</p>
@@ -288,7 +289,7 @@
     <section id="tracks" class="max-w-6xl mx-auto px-6 py-20 relative z-10">
         <h2 class="text-4xl mb-12 text-center text-white drop-shadow-lg handwriting-font">Tracks & Prizes</h2>
         <div class="glass-card p-12 rounded-3xl text-center max-w-2xl mx-auto">
-            <p class="text-3xl text-white tracking-widest uppercase handwriting-font">Coming Soon</p>
+            <p class="text-3xl text-gray-800 tracking-widest uppercase handwriting-font">Coming Soon</p>
         </div>
     </section>
 
@@ -297,20 +298,20 @@
         <h2 class="text-4xl mb-12 text-center text-white drop-shadow-lg handwriting-font">FAQ</h2>
         <div class="space-y-6">
             <div class="glass-card p-8 rounded-3xl transition duration-300">
-                <h3 class="text-xl font-bold text-pastelPeach mb-3 handwriting-font tracking-wide">What if I don't know how to code?</h3>
-                <p class="text-white leading-relaxed">No experience is required! There will be mentors available to help you throughout the entire event. Also, there's no better way to learn than by just starting—the internet is your friend, and a hackathon is the perfect place to build your very first project!</p>
+                <h3 class="text-xl font-bold text-orange-500 mb-3 handwriting-font tracking-wide">What if I don't know how to code?</h3>
+                <p class="text-gray-700 leading-relaxed">No experience is required! There will be mentors available to help you throughout the entire event. Also, there's no better way to learn than by just starting—the internet is your friend, and a hackathon is the perfect place to build your very first project!</p>
             </div>
             <div class="glass-card p-8 rounded-3xl transition duration-300">
-                <h3 class="text-xl font-bold text-pastelPink mb-3 handwriting-font tracking-wide">Who can attend?</h3>
-                <p class="text-white leading-relaxed">Hack Like W@CC is open to all women, non-binary students, and allies at Georgia Tech, as well as students from other universities across the United States.</p>
+                <h3 class="text-xl font-bold text-pink-600 mb-3 handwriting-font tracking-wide">Who can attend?</h3>
+                <p class="text-gray-700 leading-relaxed">Hack Like W@CC is open to all women, non-binary students, and allies at Georgia Tech, as well as students from other universities across the United States.</p>
             </div>
             <div class="glass-card p-8 rounded-3xl transition duration-300">
-                <h3 class="text-xl font-bold text-pastelMint mb-3 handwriting-font tracking-wide">Do I need to have a team?</h3>
-                <p class="text-white leading-relaxed">Not at all! You can come with a pre-formed team of up to 4 people, or you can come solo. We will have dedicated team-building activities at the beginning of the event to help you find teammates.</p>
+                <h3 class="text-xl font-bold text-teal-600 mb-3 handwriting-font tracking-wide">Do I need to have a team?</h3>
+                <p class="text-gray-700 leading-relaxed">Not at all! You can come with a pre-formed team of up to 4 people, or you can come solo. We will have dedicated team-building activities at the beginning of the event to help you find teammates.</p>
             </div>
             <div class="glass-card p-8 rounded-3xl transition duration-300">
-                <h3 class="text-xl font-bold text-pastelBlue mb-3 handwriting-font tracking-wide">How much does it cost?</h3>
-                <p class="text-white leading-relaxed">The event is 100% free for all attendees! Thanks to our generous sponsors, your meals, snacks, and swag will all be covered.</p>
+                <h3 class="text-xl font-bold text-blue-600 mb-3 handwriting-font tracking-wide">How much does it cost?</h3>
+                <p class="text-gray-700 leading-relaxed">The event is 100% free for all attendees! Thanks to our generous sponsors, your meals, snacks, and swag will all be covered.</p>
             </div>
         </div>
     </section>
@@ -319,19 +320,23 @@
     <section id="sponsors" class="max-w-6xl mx-auto px-6 py-20 text-center relative z-10">
         <h2 class="text-4xl mb-12 text-white drop-shadow-lg handwriting-font">Powered By</h2>
         <div class="glass-card p-12 rounded-3xl inline-block w-full max-w-3xl mb-8">
-            <p class="text-white font-bold tracking-widest text-sm mb-6 uppercase">Headline Sponsor</p>
-            <h3 class="text-5xl font-black text-white handwriting-font tracking-wider drop-shadow-md">ADP</h3>
+            <p class="text-gray-700 font-bold tracking-widest text-sm mb-6 uppercase">Headline Sponsor</p>
+            <a href="https://www.adp.com" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition">
+                <h3 class="text-5xl font-black text-gray-800 handwriting-font tracking-wider drop-shadow-md">ADP</h3>
+            </a>
         </div>
         <div class="flex flex-wrap justify-center gap-6">
-            <div class="glass-card px-10 py-8 rounded-2xl w-64 flex items-center justify-center">
-                <h3 class="text-3xl font-bold text-white handwriting-font">ElevenLabs</h3>
+            <div class="glass-card px-10 py-8 rounded-2xl w-full max-w-3xl flex items-center justify-center">
+                <a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" class="hover:opacity-80 transition">
+                    <h3 class="text-3xl font-bold text-gray-800 handwriting-font">ElevenLabs</h3>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-10 text-center text-gray-800 font-bold text-sm mt-12 relative z-10 bg-white/30 backdrop-blur-md">
-        <p>Hosted by Women @ College of Computing at Georgia Tech</p>
+        <p>Hosted by <a href="https://www.linkedin.com/m/company/waccgt" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition">Women @ College of Computing at Georgia Tech</a></p>
     </footer>
 
 </body>
